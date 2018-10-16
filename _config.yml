@@ -17,7 +17,7 @@ title: "GNUVario : Le variomètre Open Source et Open Hardware"
 description: >- # this means to ignore newlines until "baseurl:"
   GNUVario est un projet visant à distribuer un logiciel open source
   et un variomètre open hardware basé sur la plate-forme Arduino.
-baseurl: "/GNUVario" # the subpath of your site, e.g. /blog
+baseurl: "/GNUVarioFR" # the subpath of your site, e.g. /blog
 url: "https://prunkdump.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: 
 github_username:  prunkdump
