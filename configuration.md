@@ -218,7 +218,8 @@ fréquence d'affichage du taux de chute
 		2: Affichage du taux de chute moyen
 		3: Affichage des 2 informations en alternance dans la zone à droite de l'affiche du vario
 
-5) Configuration taux de chute moyen
+6) Configuration taux de chute moyen
+-----------------------------
 
 Si vous souhaitez utiliser l'affichage du taux de chute moyen, suivez cette procèdure
 
@@ -252,7 +253,7 @@ Voici la procédure :
 		3: Affichage des 2 informations en alternance dans la zone à droite de l'affiche du vario
 
 
-6) Télécharger le code du variomètre
+7) Télécharger le code du variomètre
 -----------------------------
 
 Vous pouvez maintenant définir tous les paramètres souhaités dans *VarioSettings.h*. Pour appliquer votre configuration, il vous suffit de compiler et de télécharger le schéma *Variometer*.
