@@ -204,6 +204,54 @@ Bip indiquant le début de l'enregistrement du vol
 [HAVE_MUTE]
 Active l'option MUTE, qui permet de couper et remettre le son en tapant sur le boitier
 
+[VARIOMETER_DISPLAY_INTEGRATED_CLIMB_RATE]
+Affichage du taux de chute moyen sur une période ou du taux de chute instantané si l'option n'est pas active
+
+[VARIOMETER_INTEGRATION_TIME]
+durée de l'intégration pour le calcul du taux de chute
+
+[VARIOMETER_INTEGRATION_DISPLAY_FREQ]
+fréquence d'affichage du taux de chute
+
+[RATIO_CLIMB_RATE]
+		1: Affichage de la finesse
+		2: Affichage du taux de chute moyen
+		3: Affichage des 2 informations en alternance dans la zone à droite de l'affiche du vario
+
+5) Configuration taux de chute moyen
+
+Si vous souhaitez utiliser l'affichage du taux de chute moyen, suivez cette procèdure
+
+Avec le taux de chute "moyenné" sur une periode, vous pouvez garder les bips très réactifs mais afficher à l'écran votre bilan sur 5 secondes au plus.
+
+Voici la procédure :
+
+    a) Il vous faut la période de votre GPS ( même si c'est sûrement 1000 ms ). Chargez le sketch "gps-time-analysis" puis attendez le fix. Lorsque le GPS s'est bien stabilisé lisez le chiffre en deuxième position à l'écran. C'est la période du GPS.
+
+    b) Dans VarioSettings.h entrez votre periode du GPS :
+
+      	#define GPS_PERIOD 996 
+
+	c) Si vous voulez un affichage du taux de chute intégré décommentez :
+
+		#define VARIOMETER_DISPLAY_INTEGRATED_CLIMB_RATE
+
+	d) Vous pouvez alors régler la durée de l'intégration ( ici 5s ) et la fréquence d'affichage ( ici 2 affichage par secondes )
+
+		#define VARIOMETER_INTEGRATION_TIME 5000
+		#define VARIOMETER_INTEGRATION_DISPLAY_FREQ 2.0
+
+	Ces paramètres sont aussi utilisé pour la finesse.
+
+	e) Si vous voulez afficher le taux de chute en alternance avec la finesse
+
+		#define RATIO_CLIMB_RATE 2
+
+		1: Affichage de la finesse
+		2: Affichage du taux de chute moyen
+		3: Affichage des 2 informations en alternance dans la zone à droite de l'affiche du vario
+
+
 6) Télécharger le code du variomètre
 -----------------------------
 
