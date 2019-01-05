@@ -10,6 +10,12 @@ Pour compiler le code source GNUVario, vous avez besoin de l’IDE ​​Arduino
 
 Ensuite, vous pouvez récupérer le code source GNUVario.
 
+Il existe 2 versions
+
+- La version **master** : optimisée et écrite par Prunkdump, cette version est la version de production
+
+- La version **jpg63-version** : version beta écrite par jpg63, cette version reprend la version **master** en apportant de nouvelles fonctionnalités en cours de tests ou sur le point d'être integrées à la version **master**  
+
 La méthode simple : télécharger le fichier zip
 ----------------------------------
 
