@@ -64,7 +64,7 @@ Donc, pour chaque configuration, vous avez maintenant une source d'alimentation 
 
 **!! Attention !!** Si vous alimentez la carte Arduino avec la broche RAW, la puissance fournie par la broche 5v passe par le régulateur de l'Arduino. Ce régulateur ne peut pas alimenter directement le buzzer, car il tire trop de courant. Donc, **ne connectez pas le buzzer directement à la broche 5v**. Vous devez ajouter une résistance de 120 ohms ou alimenter le signal sonore avec la batterie à l'aide de l'amplificateur L9110 (voir ci-dessous).
 
-De plus, l'écran ms5611 nécessite une source d'alimentation 3,3v. Alors connectez-le à la broche 3.3v.
+De plus, l'écran 5510 nécessite une source d'alimentation 3,3v. Alors connectez-le à la broche 3.3v.
 
 ### Si vous choisissez un arduino 3.3v
 
@@ -117,9 +117,9 @@ Vous avez maintenant votre source d'alimentation **RAW_V** qui fournit plus de 3
 | :--------------: | :--------------------------------------: |
 |       SCK        |    SCK (D13)                             |
 |     DIN/MOSI     |    MOSI (D11)                            |
-|       DC         | Situé dans VarioSettings.h ( defaut D4 ) |
-|       CS         | Situé dans VarioSettings.h ( defaut D3 ) |
-|       RST        | Situé dans VarioSettings.h ( defaut D2 ) |
+|       DC         | Situé dans VarioSettings.h ( defaut D6 ) |
+|       CS         | Situé dans VarioSettings.h ( defaut D7 ) |
+|       RST        | Situé dans VarioSettings.h ( defaut D8 ) |
 |       VCC        |     3.3v régulé                          |
 |       GND        |      GND                                 |
 
